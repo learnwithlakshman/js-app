@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function getAllEmployees() {
+            fetch("http://localhost:8080/ems/api/v1/emp/all/",
+                {
+                    headers: {
+                         'Content-Type': 'application/json',
+                         'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3N1ZWRieSI6IkhlcmFpemVuIiwiYXV0aG9yaWVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJzdWIiOiJhZG1pbkBoZXJhaXplbi5jb20iLCJpYXQiOjE2MDk0ODE3MjQsImV4cCI6MTYwOTUxNzcyNH0.gU4vigrxG98gA0qlwhCUeY75UoZZZSmIO95TPbbfLw8'
+                    }
+                }
+            ).then(e => e.json()).then(res => {
+                console.log(res);
+            }).catch(error => {
+                console.log(console.error());
+            });
+
+        }
+        getAllEmployees();
+    </script>
+</body>
+
+</html>
