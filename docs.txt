@@ -1,0 +1,1 @@
+https://ipl2020-stat.herokuapp.com/swagger-ui.html
