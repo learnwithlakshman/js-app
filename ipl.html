@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <title>JS - Example</title>
   </head>
@@ -18,14 +19,20 @@
 
     <div class="container">
             <div class="row">
-                 <div class="col">
+                 <div class="col-md-2">
                       <div id="idShowTeams"></div>  
                 </div>
-                <div class="col">
+                <div class="col-md-5">
                     <div id="idShowTeamLabels" class="mt-2"></div>
                     <div id="idPlayerData" class="row">
                         
                     </div>
+                </div>
+
+                <div class="col-md-5">
+                  <div class="py-2 bg-danger text-white text-center mt-2">Amount Spent By Teams</div>
+                   <div id="showTeamAmount"></div>
+                   <div id="idPieChart"></div>
                 </div>
                      
             </div>
